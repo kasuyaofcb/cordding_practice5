@@ -1,0 +1,571 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// *********ここからスタート**********
+
+// **************body**********************
+
+body {
+  font-family: Helvetica Neue、Arial、Hiragino Sans、Hiragino Kaku Gothic
+    ProN、Meiryo、sans-serif;
+  width: 100%;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  h2 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #fff;
+  }
+  h3 {
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    border-bottom: 5px solid red;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+// **************header**********************
+header {
+  background-image: url(img/mainvisual.jpg);
+  width: 100%;
+  height: 640px;
+  position: relative;
+
+  ul {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    display: flex;
+    justify-content: left;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #333;
+    li {
+      margin-left: 30px;
+    }
+    a:hover {
+      color: #e03131;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+  }
+  h1 {
+    font-size: 120px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 1px #fff;
+    width: 450px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+  }
+}
+
+// **************main**********************
+
+// **************menu**********************
+#menu {
+  text-align: center;
+  #menu_top {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    background-image: url(img/menu.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 300px;
+
+    h2 {
+      text-align: center;
+      height: 300px;
+      line-height: 300px;
+    }
+  }
+
+  section {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    #menu_left {
+      margin-top: 40px;
+      width: 500px;
+
+      h3 {
+        margin-bottom: 50px;
+      }
+      dl {
+        margin-top: 40px;
+        display: flex;
+        justify-content: left;
+
+        dt {
+          margin-left: 40px;
+          text-align: left;
+          border-bottom: 1px solid #333;
+          width: 350px;
+        }
+        dd {
+          margin-left: 10px;
+        }
+      }
+    }
+    #menu_right {
+      width: 500px;
+      margin-top: 40px;
+      h3 {
+        margin-bottom: 50px;
+      }
+
+      dl {
+        margin-top: 40px;
+        display: flex;
+        justify-content: left;
+        dt {
+          margin-left: 40px;
+          text-align: left;
+          border-bottom: 1px solid #333;
+          width: 350px;
+        }
+        dd {
+          margin-left: 10px;
+        }
+      }
+    }
+    #menu_right_bottom {
+      width: 500px;
+      margin-top: 40px;
+      h3 {
+        margin-top: 75px;
+        margin-bottom: 50px;
+      }
+
+      dl {
+        margin-top: 40px;
+        display: flex;
+        justify-content: left;
+        dt {
+          margin-left: 45px;
+          text-align: left;
+          border-bottom: 1px solid #333;
+          width: 350px;
+        }
+        dd {
+          margin-left: 10px;
+        }
+      }
+    }
+    #stripe {
+      border-right: 1px solid #333;
+      height: 730px;
+    }
+  }
+}
+
+// **************about**********************
+#about {
+  text-align: center;
+  #about_top {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    background-image: url(img/about.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 300px;
+
+    h2 {
+      text-align: center;
+      height: 300px;
+      line-height: 300px;
+    }
+  }
+  section {
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+
+    .about_content {
+      width: 500px;
+      padding: 0 40px;
+      line-height: 30px;
+      p {
+        margin-top: 60px;
+        text-align: left;
+        margin-bottom: 50px;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 160px;
+    height: 50px;
+    line-height: 3.5;
+    display: inline-block;
+    color: #000;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .btn span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  /*
+.btn::before 右の赤線
+.btn::after 下の赤線
+.btn span::before 左の赤線
+.btn span::after 上の赤線
+*/
+  .btn:before,
+  .btn:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background-color: #e03131;
+    transition: all 0.3s ease;
+  }
+  .btn span:before,
+  .btn span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    transition: all 0.3s ease;
+    background: #e03131;
+  }
+  .btn:before,
+  .btn span::before {
+    width: 2px;
+    height: 50%;
+  }
+
+  .btn:after,
+  .btn span:after {
+    width: 20%;
+    height: 2px;
+  }
+
+  /*
+ホバー時の縦の動作
+右の赤線と左の赤線の高さを100%にする
+*/
+  .btn:hover:before,
+  .btn span:hover::before {
+    height: 100%;
+  }
+
+  /*
+ホバー時の横の動作
+下の赤線と上の赤線の横幅を100%にする
+*/
+  .btn:hover::after,
+  .btn span:hover:after {
+    width: 100%;
+  }
+}
+// ****************location*******************
+#location {
+  text-align: center;
+
+  #location_top {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    background-image: url(img/location.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 300px;
+    h2 {
+      text-align: center;
+      height: 300px;
+      line-height: 300px;
+    }
+  }
+  #map_pc {
+    margin-top: 60px;
+    margin: 0 atuo;
+    text-align: center;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+  #map_sp {
+    display: none;
+  }
+
+  address {
+    margin: 0 auto;
+    width: 1000px;
+    margin-top: 30px;
+    p {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+//  ****************footer*******************
+
+footer {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 10px;
+}
+
+//  ****************media max767px*******************
+//  *************************************************
+@media screen and (max-width: 767px) {
+  body {
+    max-width: 767px;
+    h1 {
+      font-size: 32px;
+      width: 100%;
+      text-align: center;
+    }
+    h2 {
+      font-size: 32px;
+      text-align: center;
+      height: 95px !important;
+      line-height: 95px !important;
+      color: #fff;
+    }
+    h3 {
+      font-size: 25px;
+    }
+  }
+
+  // **************header**********************
+
+  // **************main**********************
+
+  // **************menu**********************
+  #menu {
+    #menu_top {
+      background-attachment: unset !important;
+      height: 95px;
+    }
+    section {
+      flex-direction: column;
+      width: 345px;
+      font-size: 14px;
+      #menu_left {
+        width: 345px !important;
+        dt {
+          width: 300px !important;
+          margin-left: 0 !important;
+        }
+      }
+      #menu_right {
+        width: 345px !important;
+        dt {
+          width: 300px !important;
+          margin-left: 0 !important;
+        }
+      }
+      #menu_right_bottom {
+        width: 345px !important;
+        dt {
+          width: 300px !important;
+          margin-left: 0 !important;
+        }
+      }
+      #stripe {
+        display: none;
+      }
+    }
+  }
+
+  // **************about**********************
+  #about {
+    #about_top {
+      background-attachment: unset;
+      height: 95px;
+    }
+    h3 {
+      margin-top: 30px;
+    }
+    section {
+      flex-direction: column;
+      width: 345px !important;
+      .about_content {
+        width: 345px;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        p {
+          width: 345px;
+        }
+      }
+    }
+  }
+  // ****************location*******************
+
+  #location {
+    #location_top {
+      background-attachment: unset;
+      height: 95px;
+    }
+    #map_pc {
+      display: none;
+    }
+    #map_sp {
+      display: block;
+      margin-top: 60px;
+      margin: 0 atuo;
+      text-align: center;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+    }
+
+    address {
+      width: 345px !important;
+      font-size: 14px;
+    }
+  }
+
+  //  ****************footer*******************
+}
